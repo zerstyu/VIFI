@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VIFI</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">VIFI</string>
+    <string name="title_activity_start">VIFI</string>
+    <string name="title_activity_vifi_list">원하는 TV를 선택하십시오.</string>
+
+</resources>

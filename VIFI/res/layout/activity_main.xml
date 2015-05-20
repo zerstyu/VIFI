@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#010101"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".NextActivity" >
+
+    <Button
+        android:id="@+id/button_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignRight="@+id/line1"
+        android:layout_alignTop="@+id/textView1"
+        android:background="@layout/buttonshape"
+        android:onClick="onClick"
+        android:text="     연결      "
+        android:textColor="#dddddd" />
+
+    <TextView
+        android:id="@+id/line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/seekBar1"
+        android:layout_marginTop="14dp"
+        android:background="#e79646"
+        android:height="1dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/title" 
+        android:background="@drawable/title"/>
+
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/switch1"
+        android:layout_marginTop="13dp"
+        android:background="#e79646"
+        android:height="1dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/line2"
+        android:layout_below="@+id/line2"
+        android:layout_marginTop="18dp"
+        android:text="음량"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#dddddd" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/line1"
+        android:layout_below="@+id/line1"
+        android:layout_marginTop="14dp"
+        android:text="연결중인 TV"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#dddddd" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="없음"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#dddddd" />
+
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="14dp"
+        android:background="#e79646"
+        android:height="1dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="11dp"
+        android:max="100"
+        android:progressDrawable="@drawable/seekbar_style" />
+
+    <Button
+        android:id="@+id/button_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/textView3"
+        android:background="@drawable/image_stop"
+        android:textColor="#dd660a" />
+
+    <Button
+        android:id="@+id/button_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toLeftOf="@+id/textView3"
+        android:background="@drawable/image_play"
+        android:textColor="#dd660a" />
+
+    <ImageView
+        android:id="@+id/imageView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/button_stop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/line3"
+        android:background="#010101"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:text="TextView"
+        android:textColor="#010101" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/line1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="12dp"
+        android:background="#010101"
+        android:text="Wi-Fi 설정"
+        android:textColor="#dddddd"
+        android:textOff="OFF"
+        android:textOn="ON" />
+
+</RelativeLayout>
